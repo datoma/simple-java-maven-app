@@ -49,7 +49,7 @@ pipeline {
         }
       }
     }
-    stage('Deliver') {
+    stage('Deliver to local maven repo') {
       steps {
         sh './jenkins/scripts/deliver.sh'
       }
